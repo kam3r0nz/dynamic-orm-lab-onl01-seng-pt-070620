@@ -23,7 +23,6 @@ class InteractiveRecord
     def initialize(options = {})
         options.each do |k, v|
             self.send("#{k}=", v)
-            binding.pry
         end
     end
 
